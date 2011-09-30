@@ -2095,3 +2095,15 @@ INSERT INTO "verbs" VALUES('el pecado','the sin');
 INSERT INTO "verbs" VALUES('por si acaso','in any case');
 INSERT INTO "verbs" VALUES('la vacilación','the hesitation');
 COMMIT;
+
+BEGIN TRANSACTION;
+CREATE TABLE regular_verbs (
+        spanish VARCHAR(20) PRIMARY KEY,
+        english VARCHAR(20)
+);
+INSERT INTO "regular_verbs" VALUES('hablar','to speak');
+INSERT INTO "regular_verbs" VALUES('comer','to eat');
+INSERT INTO "regular_verbs" VALUES('vivir','to live');
+INSERT INTO "regular_verbs" VALUES('estar','to be');
+INSERT INTO "regular_verbs" VALUES('trabajar','to work');
+COMMIT;
