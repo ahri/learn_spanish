@@ -1,2 +1,6 @@
 #!/bin/sh
-sqlite3 spanish.db < spanish.sql
+db="spanish.db"
+sql="spanish.sql"
+
+rm -f "$db"
+sqlite3 "$db" < "$sql"
