@@ -19,18 +19,31 @@ conv = dict(ar=dict(fps=u"o",    # first person singular (i)
                     fpp=u"amos", # first person plural (we)
                     tpp=u"áis",  # third person plural (they)
                     spp=u"an",), # second person plural (you)
-            er=dict(fps=u"es",
-                    tps=u"e",
-                    sps=u"o",
+            er=dict(fps=u"o",
+                    tps=u"es",   # nb. tps = sps + 's'
+                    sps=u"e",
                     fpp=u"emos",
-                    tpp=u"eís",
+                    tpp=u"éis",
                     spp=u"en",),
             ir=dict(fps=u"o",
                     tps=u"es",
                     sps=u"e",
                     fpp=u"imos",
-                    tpp=u"íes",
+                    tpp=u"ís",
                     spp=u"en",))
+
+# patterns:
+#
+# fps always adds an 'o'
+#
+# for -ar/-er everything but fps uses the vowel in the ending
+#
+# -ir uses the vowel in the ending for fpp/tpp (nosotros, vosotros),
+#     and e for the rest
+#
+# fpp: add "<vowel>mos"
+# tpp: add "<vowel>is", except -ir to avoid double 'i'
+#      add an accent to the vowel
 
 for es, en in conn.execute(query):
     res = regverb_matcher.match(es)
