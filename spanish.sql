@@ -2102,8 +2102,14 @@ CREATE TABLE regular_verbs (
         english VARCHAR(20)
 );
 INSERT INTO "regular_verbs" VALUES('hablar','to speak');
+INSERT INTO "regular_verbs" VALUES('estudiar','to study');
+INSERT INTO "regular_verbs" VALUES('bailar','to dance');
 INSERT INTO "regular_verbs" VALUES('comer','to eat');
+INSERT INTO "regular_verbs" VALUES('beber','to drink');
+INSERT INTO "regular_verbs" VALUES('comprender','to understand');
 INSERT INTO "regular_verbs" VALUES('vivir','to live');
+INSERT INTO "regular_verbs" VALUES('escribir','to write');
+INSERT INTO "regular_verbs" VALUES('abrir','to open');
 INSERT INTO "regular_verbs" VALUES('estar','to be');
 INSERT INTO "regular_verbs" VALUES('trabajar','to work');
 COMMIT;
