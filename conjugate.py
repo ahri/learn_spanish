@@ -17,8 +17,8 @@ conv = dict(ar=dict(fps=u"o",    # first person singular (i)
                     tps=u"as",   # third person singular (you)
                     sps=u"a",    # second person singular (he/she)
                     fpp=u"amos", # first person plural (we)
-                    tpp=u"áis",  # third person plural (they)
-                    spp=u"an",), # second person plural (you)
+                    tpp=u"áis",  # third person plural (you, collectively)
+                    spp=u"an",), # second person plural (they)
             er=dict(fps=u"o",
                     tps=u"es",   # nb. tps = sps + 's'
                     sps=u"e",
